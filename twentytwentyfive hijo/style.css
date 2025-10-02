@@ -1,0 +1,152 @@
+/*
+Theme Name:   twentytwentyfive hijo
+Description:  Tema hijo para tutorial DonWeb
+Author:       Emanuel
+Author URL:   https://test123prueba.online/
+Template:     twentytwentyfive 
+Version:      1.0
+License:      GNU General Public License v2 or later
+License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:  twentytwentyfive hijo
+*/
+
+/* Añade aquí tus estilos personalizados */
+
+
+body {
+    background: linear-gradient(135deg, #f0f0f0, #d9d9d9);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    --wp--style--root--padding-left: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 25px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+}
+
+label {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+/* Estilo unificado para todos los campos de formulario */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+}
+
+/* Mejora visual para el select */
+select {
+    appearance: none;
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg fill="gray" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px 16px;
+}
+
+/* Espaciado entre grupo de label + input */
+form > label,
+form > select,
+form > input {
+    margin-bottom: 10px;
+}
+
+button,
+.a-container a {
+    display: inline-block;
+    text-align: center;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+button:hover,
+.a-container a:hover {
+    background-color: #1a252f;
+}
+
+.a-container {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+        max-width: 100%;
+    }
+}
+
+
+/* usuarios */
+.user-table {
+    background-color: #ffffff;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.user-table th,
+.user-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.user-table th {
+    background-color: #2c3e50;
+    color: white;
+}
+
+.user-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.user-table tr:hover {
+    background-color: #e0e0e0;
+}
+
+.registro-button {
+    display: inline-block;
+    text-align: center;
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.registro-button:hover {
+    background-color: #1a252f;
+}
